@@ -1,0 +1,31 @@
+package selfProgramming;
+import java.util.Arrays;
+public class e3 {
+
+	public static void main(String[] args) 
+	{
+		int max = 0;
+		int min = 99999;
+		int[] array = {25, 14, 56, 15, 36, 56, 77, 18, 29, 49};
+		
+		for(int i = 1; i < array.length; i++)
+			if(max < array[i])
+				max = array[i];
+		
+		for(int j = 1; j < array.length; j++)	
+			if (min > array[j])
+				min = array[j];
+		
+		int sum = 0;
+		for(int k = 1; k < array.length; k++)
+			sum = sum + array[k];
+		
+		System.out.println(" Original Array: "+Arrays.toString(array));
+        System.out.println(" Maximum value for the above array = " + max);
+        System.out.println(" Minimum value for the above array = " + min);
+        System.out.println(" Sum value for the above array = " + sum);
+        
+
+	}
+
+}
